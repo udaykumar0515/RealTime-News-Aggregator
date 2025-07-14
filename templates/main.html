@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Flow & About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+            <div style="display: flex; align-items: center;">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo" id="logo">
+                <h1 id="main-title">News Flow</h1>
+                <button id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                    <span id="darkModeIcon" class="sun">&#9728;</span> <!-- Default to Sun (Light mode) -->
+                </button>
+            </div>
+                
+        <style type="text/css">
+            #google_translate_element .goog-te-banner-frame {
+                display: none !important;
+            }
+            #google_translate_element .goog-te-menu-value {
+                font-size: 14px !important;
+            }
+        </style>
+
+       <div id="google_translate_element"></div>
+<script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,hi,ta,te,bn,mr,ml,gu,kn,pa,fr,de,zh-CN,it,es', // Indian and foreign languages
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element');
+        }
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    </header>
+
+    <div id="loading" class="pac-man" style="display: none;"></div>
+    
+    <nav>
+        <ul>
+            <li><a href="#" id="home" onclick="resetSearch()">Home</a></li>
+            <li><a href="#" id="technology" onclick="fetchNews('technology')">Technology</a></li>   
+            <li><a href="#" id="sports" onclick="fetchNews('sports')">Sports</a></li>
+            <li><a href="#" id="health" onclick="fetchNews('health')">Health</a></li>
+            <li><a href="#" id="business" onclick="fetchNews('business')">Business</a></li>
+            <li><a href="{{ url_for('about') }}" id="about-us">About Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Search Bar -->
+    <section id="search-bar">
+        <input type="text" id="search-input" placeholder="Search news..." required />
+        <button onclick="searchNews()" id="search-btn">Search</button>
+    </section>
+    
+
+    <!-- News Articles -->
+    <main>
+        <section id="news-articles">
+            <!-- News articles will be dynamically loaded here -->
+        </section>
+        <div id="pagination" style="text-align: center; margin: 20px 0;"></div>
+    </main>
+<!-- Button to toggle the feedback form -->
+    <button id="feedbackButton">Give Feedback</button>
+
+<!-- Feedback form initially hidden -->
+<div id="feedbackFormContainer" style="display: none;">
+    <form id="feedbackForm">
+        <label for="user_id">User ID:</label>
+        <input type="text" id="user_id" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" required></textarea>
+
+        <button type="submit">Submit Feedback</button>
+    </form>
+</div>
+
+    
+    <!-- Footer -->
+    <footer>
+        <p id="footer-text">&copy; 2024 News Aggregator. All rights reserved.</p>
+    </footer>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

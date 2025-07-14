@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='aboutstyle.css') }}">
+    <title>About Us - News Flow</title> 
+</head>
+<body>
+    <header>
+        <div style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+            <!-- Left side: Logo and Title -->
+            <div style="display: flex; align-items: center;">
+                <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo" class="logo" id="logo">
+                <h1 id="main-title">News Flow</h1>
+            </div>
+            
+            <!-- Right side: Language Selector and Dark Mode Toggle -->
+            <div style="display: flex; align-items: center;">
+                <!-- Language Selector -->
+                <label for="languages" id="language-label">Choose Language:</label>
+                <select id="languages" onchange="changeLanguage()">
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="bn">Bengali</option>
+                    <!-- Add more language options here -->
+                </select>
+    
+                <!-- Dark Mode Toggle -->
+                    <button id="darkModeToggle" onclick="toggleDarkMode()" aria-label="Toggle Dark Mode">
+                        <span id="darkModeIcon" class="sun">&#9728;</span> <!-- Default to Sun (Light mode) -->
+                    </button>
+                </div>
+        </div>
+    </header>
+    
+
+    <div id="loading" class="pac-man" style="display: none;"></div>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('home') }}" id="home" onclick="resetSearch()">Home</a></li>
+            <li><a href="{{ url_for('about') }}" id="about-us">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Our Mission Section -->
+    <section>
+        <div id="mission-title">Our Mission</div>
+        <div id="mission-content" class="section-content">At News Flow, our mission is to deliver accurate and timely news...</div>
+    </section>
+
+    <!-- Our Vision Section -->
+    <section>
+        <div id="vision-title">Our Vision</div>
+        <div id="vision-content" class="section-content">We envision a world where everyone has access to reliable news...</div>
+    </section>
+
+    <!-- Our Values Section -->
+    <section>
+        <div id="values-title">Our Values</div>
+        <div id="values-content" class="section-content">
+            <ul>
+                <li id="integrity-value"><strong>Integrity:</strong> We adhere to the highest standards...</li>
+                <li id="transparency-value"><strong>Transparency:</strong> We are committed to openness...</li>
+                <li id="innovation-value"><strong>Innovation:</strong> We embrace new technologies...</li>
+                <li id="community-value"><strong>Community:</strong> We engage with our readers...</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Meet Our Team Section -->
+    <section>
+        <div id="team-title">Meet Our Team</div>
+        <div class="team">
+            <div class="team-member">
+                <h3 id="team-member-1">K. Pranay</h3>
+                <p id="team-member-1-desc">Focuses on organizing and presenting news in a clear way.</p>
+            </div>
+            <div class="team-member">
+                <h3 id="team-member-2">H. Uday</h3>
+                <p id="team-member-2-desc">Handles the technical aspects, ensuring the site runs smoothly and looks great.</p>
+            </div>
+            <div class="team-member">
+                <h3 id="team-member-3">B. Hasini</h3>
+                <p id="team-member-3-desc">Curates relevant content that matters to our audience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p id="footer-text">&copy; 2024 News Flow. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='about.js') }}"></script>
+</body>
+</html>
