@@ -1,6 +1,4 @@
-## 📄 `README.md` (Final Version)
 
-````markdown
 # 📰 NewsFlow - Real-Time News Aggregator 🌍
 
 **NewsFlow** is a responsive, full-stack web application that aggregates real-time global news using the [NewsAPI](https://newsapi.org). Built with Flask and JavaScript, it offers users a sleek and interactive dashboard to explore headlines by category, perform live searches, submit feedback, and switch between multiple languages and themes — all in one place.
@@ -81,7 +79,7 @@ NewsFlow was built as part of an internship project and is architected with **mo
 
 ---
 
-### 🌍 Translated to Hindi (Manual JSON-based Local Translation)
+### 🌍 Translated to Hindi (Automatic Google API Based Translation)
 
 ![Hindi Translation](images/main_page_hindi.png)
 
@@ -124,24 +122,36 @@ http://127.0.0.1:5000/
 ```
 
 ---
+---
 
-## 🙋‍♂️ Author
+## Team Members
 
-**Haibathi Uday Kumar**
-📧 [udaykumarhaibathi@gmail.com](mailto:udaykumarhaibathi@gmail.com)
-🔗 [LinkedIn](https://linkedin.com/in/uday-kumar-haibathi-311b66322)
+This project was developed as part of a team collaboration.
+
+- **Udaykumar**  
+  🔗 [GitHub](https://github.com/udaykumar0515)  
+  📧 udaykumarhaibathi@gmail.com
+
+- **[Teammate 1's Name]**  
+  🔗 [GitHub](https://github.com/username1)  
+  📧 email@example.com
+
+- **[Teammate 2's Name]**  
+  🔗 [GitHub](https://github.com/username2)  
+  📧 email@example.com
+
+---
+
+## Author
+
+**Haibathi Uday Kumar**  
+📧 [udaykumarhaibathi@gmail.com](mailto:udaykumarhaibathi@gmail.com)  
+🔗 [LinkedIn](https://linkedin.com/in/uday-kumar-haibathi-311b66322)  
 💻 [GitHub](https://github.com/udaykumar0515)
 
 ---
 
-## 🤝 Contributions
-
-Pull requests and suggestions are welcome!
-If you liked this project, feel free to ⭐ the repo to support my work.
-
----
-
-## 📬 Feedback
+## Feedback
 
 Users can submit feedback via the in-app form.
 For technical queries or feature suggestions, feel free to open an issue or contact me directly via email.
