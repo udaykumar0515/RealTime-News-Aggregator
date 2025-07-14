@@ -10,8 +10,7 @@ app = Flask(__name__)
 json_file_path = os.path.join(os.path.dirname(__file__), 'feedback.json')
 
 # Load API key from environment variable or define it directly
-API_KEY = os.getenv('NEWS_API_KEY', 'YOUR_API_KEY')
-# API_KEY = os.getenv('NEWS_API_KEY', 'YOUR_API_KEY')
+API_KEY = os.getenv("NEWS_API_KEY")
 
 @app.route('/')
 def home():

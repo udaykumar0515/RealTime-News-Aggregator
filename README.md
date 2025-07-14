@@ -40,6 +40,7 @@
 NewsFlow/
 ├── app.py                  # Main Flask backend app
 ├── feedback.json           # Stores submitted feedback
+├── .env.example    
 ├── static/                 # Frontend assets (JS, CSS, Images)
 │   ├── script.js
 │   ├── about.js
@@ -100,14 +101,16 @@ cd RealTime-News-Aggregator
 pip install flask requests
 ```
 
-3. **Add your NewsAPI key**
+**With this (for `.env` method):**
+```markdown
+3. **Configure API Key using `.env`**
 
-* Get it from: [https://newsapi.org](https://newsapi.org)
-* Open `app.py` and paste your API key in place of the default one:
+- Get your NewsAPI key from: [https://newsapi.org](https://newsapi.org)
+- Create a `.env` file in the root directory of the project:
+  
+  ```env
+  NEWS_API_KEY=your_actual_api_key_here
 
-  ```python
-  API_KEY = os.getenv('NEWS_API_KEY', 'YOUR_API_KEY_HERE')
-  ```
 
 4. **Run the Flask server**
 
@@ -132,11 +135,11 @@ This project was developed as part of a team collaboration.
   🔗 [GitHub](https://github.com/udaykumar0515)  
   📧 udaykumarhaibathi@gmail.com
 
-- **[Teammate 1's Name]**  
+- **Pranay**  
   🔗 [GitHub](https://github.com/username1)  
   📧 email@example.com
 
-- **[Teammate 2's Name]**  
+- **Hasini**  
   🔗 [GitHub](https://github.com/username2)  
   📧 email@example.com
 
