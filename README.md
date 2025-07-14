@@ -1,4 +1,3 @@
-
 # 📰 NewsFlow - Real-Time News Aggregator 🌍
 
 **NewsFlow** is a responsive, full-stack web application that aggregates real-time global news using the [NewsAPI](https://newsapi.org). Built with Flask and JavaScript, it offers users a sleek and interactive dashboard to explore headlines by category, perform live searches, submit feedback, and switch between multiple languages and themes — all in one place.
@@ -40,7 +39,7 @@
 NewsFlow/
 ├── app.py                  # Main Flask backend app
 ├── feedback.json           # Stores submitted feedback
-├── .env.example    
+├── .env.example            # Template showing expected environment variables
 ├── static/                 # Frontend assets (JS, CSS, Images)
 │   ├── script.js
 │   ├── about.js
@@ -66,8 +65,6 @@ NewsFlow was built as part of an internship project and is architected with **mo
 
 ## 🖼️ Screenshots
 
-> Replace placeholder image paths with actual images in your repo if needed.
-
 ### 🌐 Main Home Page (Light Mode)
 
 ![Main Page](images/main_page.png)
@@ -80,7 +77,7 @@ NewsFlow was built as part of an internship project and is architected with **mo
 
 ---
 
-### 🌍 Translated to Hindi (Automatic Google API Based Translation)
+### 🌍 Translated to Hindi (Manual Local Translation via JavaScript)
 
 ![Hindi Translation](images/main_page_hindi.png)
 
@@ -98,19 +95,19 @@ cd RealTime-News-Aggregator
 2. **Install required packages**
 
 ```bash
-pip install flask requests
+pip install flask requests python-dotenv
 ```
 
-**With this (for `.env` method):**
-```markdown
 3. **Configure API Key using `.env`**
 
-- Get your NewsAPI key from: [https://newsapi.org](https://newsapi.org)
-- Create a `.env` file in the root directory of the project:
-  
-  ```env
-  NEWS_API_KEY=your_actual_api_key_here
+* Get your NewsAPI key from: [https://newsapi.org](https://newsapi.org)
+* Create a `.env` file in the root directory of the project:
 
+```env
+NEWS_API_KEY=your_actual_api_key_here
+```
+
+> Do **not** share `.env` or commit it to GitHub. Use `.env.example` for reference.
 
 4. **Run the Flask server**
 
@@ -125,38 +122,33 @@ http://127.0.0.1:5000/
 ```
 
 ---
----
 
-## Team Members
+## 👥 Team Members
 
-This project was developed as part of a team collaboration.
+This project was developed as part of a team collaboration:
 
-- **Udaykumar**  
-  🔗 [GitHub](https://github.com/udaykumar0515)  
-  📧 udaykumarhaibathi@gmail.com
+* **Udaykumar**
+  🔗 [GitHub](https://github.com/udaykumar0515)
+  📧 [udaykumarhaibathi@gmail.com](mailto:udaykumarhaibathi@gmail.com)
 
-- **Pranay**  
-  🔗 [GitHub](https://github.com/username1)  
-  📧 email@example.com
+* **Pranay**
+  🔗 [GitHub](https://github.com/username1)
 
-- **Hasini**  
-  🔗 [GitHub](https://github.com/username2)  
-  📧 email@example.com
+* **Hasini**
+  🔗 [GitHub](https://github.com/username2)
 
 ---
 
-## Author
+## 👤 Author
 
-**Haibathi Uday Kumar**  
-📧 [udaykumarhaibathi@gmail.com](mailto:udaykumarhaibathi@gmail.com)  
-🔗 [LinkedIn](https://linkedin.com/in/uday-kumar-haibathi-311b66322)  
+**Haibathi Uday Kumar**
+📧 [udaykumarhaibathi@gmail.com](mailto:udaykumarhaibathi@gmail.com)
+🔗 [LinkedIn](https://linkedin.com/in/uday-kumar-haibathi-311b66322)
 💻 [GitHub](https://github.com/udaykumar0515)
 
 ---
 
-## Feedback
+## 💬 Feedback
 
 Users can submit feedback via the in-app form.
-For technical queries or feature suggestions, feel free to open an issue or contact me directly via email.
-
-```
+For technical queries or feature suggestions, feel free to open an issue or contact me via email.
