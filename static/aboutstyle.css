@@ -1,0 +1,310 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #fafefe;
+}
+
+/* General Header Styles */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+#main-title {
+    font-size: 2em;
+    color: white;
+}
+
+/* Header Right (Language & Dark Mode Button) */
+.header-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode #main-title {
+    color: #fff;
+}
+
+body.dark-mode .section-content {
+    background-color: #2b2b2b;
+    color: #ddd;
+}
+
+body.dark-mode #footer-text {
+    background-color: #333;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #555;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items */
+    background-color: #333; /* Adjust header background color */
+    color: rgb(249, 245, 245); /* Adjust header text color */
+    text-align: center;
+    padding: 1em 0; /* Add some padding to the header */
+    width: 100%; /* Make header full width */
+}
+#logo {
+    width: 50px; /* Adjust logo size */
+    margin-right: 10px; /* Spacing between logo and title */
+}
+
+nav {
+    background-color: #555;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+
+section {
+    background: #c7d9e1;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #ffffff;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+    background: #eaeaea;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+footer {
+    background-color: #555; /* Dark background color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add vertical padding */
+    position: relative; /* Allow it to stay at the bottom */
+    bottom: 0; /* Position at the bottom */
+    width: 100%; /* Full width */
+    font-size: 14px; /* Font size */
+}
+
+#darkModeToggle {
+    position: absolute; /* This allows you to place it anywhere inside the header */
+    right: 260px; /* Adjusts the distance from the right edge */
+    top: 47px; /* Adjusts the distance from the top edge */
+}
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212; /* Dark background for the page */
+    color: #fff; /* Light text color */
+}
+
+/* Styling for the sections ('Our Mission', 'Our Vision', 'Our Values') */
+body.dark-mode #mission-title,
+body.dark-mode #vision-title,
+body.dark-mode #values-title {
+    background-color: #333; /* Dark background for section titles */
+    color: #fff; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+body.dark-mode .section-content {
+    background-color: #2b2b2b; /* Slightly lighter dark background for the content */
+    color: #ddd; /* Light text for content */
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 20px; /* Space between sections */
+}
+
+/* 'Our Mission', 'Our Vision', 'Our Values' content */
+body.dark-mode #mission-content,
+body.dark-mode #vision-content,
+body.dark-mode #integrity-value,
+body.dark-mode #transparency-value,
+body.dark-mode #innovation-value,
+body.dark-mode #community-value {
+    color: #ddd; /* Light text color for readability */
+    line-height: 1.6;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+/* 'Meet Our Team' Section */
+body.dark-mode #team-title {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+body.dark-mode .team-member {
+    background-color: #2b2b2b;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+body.dark-mode .team-member:hover {
+    background-color: #444;
+    transform: translateY(-5px); /* Hover effect */
+}
+
+body.dark-mode .team-member h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+body.dark-mode .team-member p {
+    font-size: 1em;
+    color: #ddd; /* Lighter text for descriptions */
+    line-height: 1.5;
+}
+
+/* Footer Styling */
+body.dark-mode #footer-text {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2opx;
+    margin-top: 2px;
+    border-radius:0px;
+}
+#darkModeToggle {
+    background-color: transparent; /* Remove any background */
+    border: none; /* Remove button border */
+    padding: 0; /* Remove padding to make the icon fit neatly */
+    cursor: pointer; /* Make it look clickable */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#darkModeToggle img {  /* If you're using an image for the icon */
+    width: 30px;  /* Adjust the size of the icon */
+    height: 30px; /* Adjust the height */
+    background: none; /* Ensure no background */
+}
+
+#darkModeToggle i {  /* If you're using a FontAwesome icon */
+    font-size: 30px; /* Adjust the size of the icon */
+    color: rgb(255, 243, 243); /* Set icon color */
+}
+
+#darkModeToggle:focus {
+    outline: none; /* Remove outline when focused */
+}
+
+/* Icon Style */
+#darkModeIcon {
+    font-size: em; /* Adjust size as per your preference */
+    color: inherit; /* Inherit color from parent element */
+}
+
+/* Ensure dark mode icon appears correctly */
+body.dark-mode #darkModeIcon {
+    content: "🌙"; /* Half Moon for Dark Mode */
+}
+#logo {
+    width: 50px;  /* Ensure your logo size is not too big */
+    margin-right: 10px;  /* Space between logo and text */
+}
+
+/* Basic Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f8f8;
+    height: 100%;
+    margin: 0;
+    color: #333;
+}
+
