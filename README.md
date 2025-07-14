@@ -68,9 +68,22 @@ It was created as part of an internship project and designed for deployment read
 
 ---
 
-## 🖼️ Screenshots (Optional – Add if you have)
+## 🖼️ Screenshots
 
-> You can insert screenshots or a demo video link here to show off the UI and features.
+Here are some snapshots showcasing the interface and features of NewsFlow:
+
+### 🌐 Main Home Page (Light Mode)
+![Main Page](images/main_page.png)
+
+---
+
+### 🌗 Dark Mode Enabled
+![Dark Mode](images/main_page_darkmode.png)
+
+---
+
+### 🌍 Translated to Hindi (Manual JSON-based Local Translation)
+![Hindi Translation](images/main_page_hindi.png)
 
 ---
 
