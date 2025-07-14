@@ -129,7 +129,6 @@ This project was developed as part of a team collaboration:
 
 * **Udaykumar**
   🔗 [GitHub](https://github.com/udaykumar0515)
-  📧 [udaykumarhaibathi@gmail.com](mailto:udaykumarhaibathi@gmail.com)
 
 * **Pranay**
   🔗 [GitHub](https://github.com/username1)
