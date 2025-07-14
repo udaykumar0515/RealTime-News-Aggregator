@@ -1,6 +1,3 @@
-Awesome — here is the **proper, professional-quality `README.md`** for your **NewsFlow - Real-Time News Aggregator** project. It's designed to be recruiter-friendly, clear, and impressive on GitHub.
-
----
 
 ## 📄 `README.md` (Copy and paste this into `README.md` file)
 
