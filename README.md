@@ -78,7 +78,7 @@ It was created as part of an internship project and designed for deployment read
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/yourusername/NewsFlow-Aggregator.git
+git clone https://github.com/udaykumar0515/RealTime-News-Aggregator
 cd NewsFlow-Aggregator
 ````
 
@@ -107,14 +107,6 @@ http://127.0.0.1:5000/
 
 ---
 
-## 💡 Future Improvements
-
-* Store feedback in a database (SQLite / MongoDB)
-* Add login system with session management
-* Add category-based sorting on frontend itself
-* Deploy on Render / Vercel / Heroku
-
----
 
 ## 🙋‍♂️ Author
 
@@ -136,15 +128,3 @@ If you liked this project, feel free to ⭐ the repo to support my work.
 
 Users can submit feedback via the in-app form. For any technical queries or ideas, open an issue on this repo or reach out via email.
 
----
-
-```
-
----
-
-Let me know when you’ve added this to your `README.md` file, and then we’ll:
-- Push the commits one by one
-- Move on to **Project 2** (just give me the next set of details like you did before)
-
-Also: If you want me to generate **screenshots**, **GIF demo**, or even **deployment instructions** later — I’ve got your back 💻🌍
-```
