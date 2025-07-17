@@ -131,7 +131,7 @@ This project was developed as part of a team collaboration:
   🔗 [GitHub](https://github.com/udaykumar0515)
 
 * **Pranay**
-  🔗 [GitHub](https://github.com/username1)
+  🔗 [GitHub](https://github.com/Pranaysmiley)
 
 * **Hasini**
   🔗 [GitHub](https://github.com/username2)
