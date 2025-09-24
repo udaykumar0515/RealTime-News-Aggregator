@@ -11,3 +11,4 @@ __pycache__/
 ~$*
 documents/
 .env
+PROJECT_FULL_DOC.md
