@@ -11,6 +11,9 @@ json_file_path = os.path.join(os.path.dirname(__file__), 'feedback.json')
 
 # Load API key from environment variable or define it directly
 API_KEY = os.getenv("NEWS_API_KEY")
+if not API_KEY:
+    print("WARNING: NEWS_API_KEY environment variable not set!")
+    print("Please set it in your .env file or environment variables.")
 
 @app.route('/')
 def home():
@@ -77,7 +80,8 @@ def save_feedback(user_id, feedback_text, email):
     try:
         with open(json_file_path, "r") as file:
             feedback_data = json.load(file)
-    except FileNotFoundError:
+    except (FileNotFoundError, json.JSONDecodeError):
+        # If file doesn't exist or is corrupted, start with empty list
         feedback_data = []
 
     feedback_data.append(feedback_entry)
