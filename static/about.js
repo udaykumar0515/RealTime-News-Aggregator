@@ -21,7 +21,29 @@ if (localStorage.getItem('darkMode') === 'enabled') {
     document.getElementById('darkModeIcon').innerHTML = '&#9728;'; // Full Sun icon for Light mode
 }
 
-// Translations are defined below, no need for external JSON files
+// Function to change language on the About Us page
+function changeLanguage() {
+    const language = document.getElementById('languages').value;
+    loadContent(language);
+}
+
+// Function to load translations
+function loadContent(language) {
+    fetch(`translations/${language}.json`)
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('main-title').innerText = data.title;
+            document.querySelectorAll('.translatable').forEach(element => {
+                const key = element.dataset.key;
+                element.innerText = data[key] || element.innerText;
+            });
+        });
+}
+
+// Optional: Add any additional functions specific to the About Us page here
+document.addEventListener('DOMContentLoaded', () => {
+    // Any initial setup for the About Us page can be done here
+});
 
 const translations = {
     en: {

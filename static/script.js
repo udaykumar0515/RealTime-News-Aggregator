@@ -69,7 +69,7 @@
         const validArticles = articles.filter(article => article.title && article.urlToImage && article.author);
 
         // Determine how many articles to show
-        const articlesToShow = validArticles.slice(0, 12); 
+        const articlesToShow = validArticles.slice(0, 8); 
 
         // Display valid articles
         articlesToShow.forEach(article => {
@@ -104,7 +104,7 @@
         });
 
         // If there are fewer valid articles, add placeholders for layout consistency
-        const placeholderCount = 12 - articlesToShow.length;
+        const placeholderCount = 8 - articlesToShow.length;
         if (placeholderCount > 0) {
             for (let i = 0; i < placeholderCount; i++) {
                 const placeholderDiv = document.createElement('div');
@@ -143,7 +143,7 @@
 
         const nextButton = document.createElement('button');
         nextButton.innerText = 'Next';
-        nextButton.disabled = (currentPage * 12 >= totalResults); // Adjust for 12 articles per page
+        nextButton.disabled = (currentPage * 8 >= totalResults); // Adjust for 8 articles per page
         nextButton.onclick = () => fetchNews(currentQuery || currentCategory, currentPage + 1);
         paginationDiv.appendChild(nextButton);
     }
@@ -191,7 +191,11 @@
         document.getElementById('darkModeIcon').innerHTML = '⏾'; // Half Moon icon for Dark mode
     } else {
         document.getElementById('darkModeIcon').innerHTML = '&#9728;'; // Full Sun icon for Light mode
-    } 
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        fetchNews();
+    }); 
 
 
     // Get the button and form container
