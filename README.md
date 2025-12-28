@@ -22,14 +22,14 @@
 
 ## 🛠️ Tech Stack
 
-| Layer         | Tools Used                             |
-|---------------|----------------------------------------|
-| **Frontend**  | HTML, CSS, JavaScript                  |
-| **Backend**   | Flask (Python)                         |
-| **API**       | NewsAPI                                |
-| **Templating**| Jinja2                                 |
-| **Storage**   | JSON (for feedback)                    |
-| **Translation** | Google Translate + Custom JS Engine  |
+| Layer           | Tools Used                          |
+| --------------- | ----------------------------------- |
+| **Frontend**    | HTML, CSS, JavaScript               |
+| **Backend**     | Flask (Python)                      |
+| **API**         | NewsAPI                             |
+| **Templating**  | Jinja2                              |
+| **Storage**     | JSON (for feedback)                 |
+| **Translation** | Google Translate + Custom JS Engine |
 
 ---
 
@@ -51,7 +51,7 @@ NewsFlow/
 │   └── about.html
 ├── .gitignore              # Files/folders excluded from Git
 └── README.md               # This file
-````
+```
 
 ---
 
@@ -95,13 +95,13 @@ cd RealTime-News-Aggregator
 2. **Install required packages**
 
 ```bash
-pip install flask requests python-dotenv
+pip install -r requirements.txt
 ```
 
 3. **Configure API Key using `.env`**
 
-* Get your NewsAPI key from: [https://newsapi.org](https://newsapi.org)
-* Create a `.env` file in the root directory of the project:
+- Get your NewsAPI key from: [https://newsapi.org](https://newsapi.org)
+- Create a `.env` file in the root directory of the project:
 
 ```env
 NEWS_API_KEY=your_actual_api_key_here
@@ -127,13 +127,13 @@ http://127.0.0.1:5000/
 
 This project was developed as part of a team collaboration:
 
-* **Udaykumar**
+- **Udaykumar**
   🔗 [GitHub](https://github.com/udaykumar0515)
 
-* **Pranay**
+- **Pranay**
   🔗 [GitHub](https://github.com/Pranaysmiley)
 
-* **Hasini**
+- **Hasini**
   🔗 [GitHub](https://github.com/username2)
 
 ---
