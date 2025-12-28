@@ -9,7 +9,21 @@ app = Flask(__name__)
 # Define the path to the JSON file in the same directory as app.py
 json_file_path = os.path.join(os.path.dirname(__file__), 'feedback.json')
 
-# Load API key from environment variable or define it directly
+# Function to manually load .env file
+def load_env():
+    env_path = os.path.join(os.path.dirname(__file__), '.env')
+    if os.path.exists(env_path):
+        with open(env_path, 'r') as f:
+            for line in f:
+                line = line.strip()
+                if line and not line.startswith('#') and '=' in line:
+                    key, value = line.split('=', 1)
+                    os.environ[key.strip()] = value.strip()
+
+# Load environment variables
+load_env()
+
+# Load API key from environment variable
 API_KEY = os.getenv("NEWS_API_KEY")
 if not API_KEY:
     print("WARNING: NEWS_API_KEY environment variable not set!")
@@ -39,7 +53,14 @@ def get_news():
         params['q'] = search_query
     else:
         url = f'{base_url}top-headlines'
-        params['category'] = category_query
+        # Map 'Home' to 'general' which is a valid NewsAPI category
+        if category_query == 'Home':
+            target_category = 'general'
+        else:
+            target_category = category_query
+            
+        params['category'] = target_category
+        params['country'] = 'in'  # Default to India news
 
     # Make API request
     try:
